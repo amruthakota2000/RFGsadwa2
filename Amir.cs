@@ -180,7 +180,7 @@ namespace Smarter_Stoplight_Problem
                         //this check is needed becuase the execution time of program is faster than the stopwatch timer
                         if (CarsPassedNorth.Count != 0)
                         {
-                            if (CarsPassedNorth[0].GetSeqNum() != CarsComingNorth[0].GetSeqNum())
+                            if (CarsPassedNorth[CarsPassedNorth.Count - 1].GetSeqNum() != CarsComingNorth[0].GetSeqNum())
                             {
                                 //set the exit time of the car
                                 CarsComingNorth[0].SetExitTime((int)Math.Round(stopwatch_overall.Elapsed.TotalSeconds) + 1);
@@ -456,7 +456,7 @@ namespace Smarter_Stoplight_Problem
                             //this check is needed becuase the execution time of program is faster than the stopwatch timer
                             if (CarsPassedNorth.Count != 0)
                             {
-                                if (CarsPassedNorth[0].GetSeqNum() != CarsComingNorth[0].GetSeqNum())
+                                if (CarsPassedNorth[CarsPassedNorth.Count - 1].GetSeqNum() != CarsComingNorth[0].GetSeqNum())
                                 {
                                     //set the exit time of the car
                                     CarsComingNorth[0].SetExitTime((int)Math.Round(stopwatch_overall.Elapsed.TotalSeconds) + 1);
@@ -521,7 +521,7 @@ namespace Smarter_Stoplight_Problem
                             //this check is needed becuase the execution time of program is faster than the stopwatch timer
                             if (CarsPassedSouth.Count != 0)
                             {
-                                if (CarsPassedSouth[0].GetSeqNum() != CarsComingSouth[0].GetSeqNum())
+                                if (CarsPassedSouth[CarsPassedSouth.Count - 1].GetSeqNum() != CarsComingSouth[0].GetSeqNum())
                                 {
                                     //set the exit time of the car
                                     CarsComingSouth[0].SetExitTime((int)Math.Round(stopwatch_overall.Elapsed.TotalSeconds) + 1);
@@ -731,7 +731,7 @@ namespace Smarter_Stoplight_Problem
                         //this check is needed becuase the execution time of program is faster than the stopwatch timer
                         if (CarsPassedEast.Count != 0)
                         {
-                            if (CarsPassedEast[0].GetSeqNum() != CarsComingEast[0].GetSeqNum())
+                            if (CarsPassedEast[CarsPassedEast.Count - 1].GetSeqNum() != CarsComingEast[0].GetSeqNum())
                             {
                                 //set the exit time of the car
                                 CarsComingEast[0].SetExitTime((int)Math.Round(stopwatch_overall.Elapsed.TotalSeconds) + 1);
@@ -1005,7 +1005,7 @@ namespace Smarter_Stoplight_Problem
                             //this check is needed becuase the execution time of program is faster than the stopwatch timer
                             if (CarsPassedEast.Count != 0)
                             {
-                                if (CarsPassedEast[0].GetSeqNum() != CarsComingEast[0].GetSeqNum())
+                                if (CarsPassedEast[CarsPassedEast.Count - 1].GetSeqNum() != CarsComingEast[0].GetSeqNum())
                                 {
                                     //set the exit time of the car
                                     CarsComingEast[0].SetExitTime((int)Math.Round(stopwatch_overall.Elapsed.TotalSeconds) + 1);
@@ -1070,7 +1070,7 @@ namespace Smarter_Stoplight_Problem
                             //this check is needed becuase the execution time of program is faster than the stopwatch timer
                             if (CarsPassedWest.Count != 0)
                             {
-                                if (CarsPassedWest[0].GetSeqNum() != CarsComingWest[0].GetSeqNum())
+                                if (CarsPassedWest[CarsPassedWest.Count - 1].GetSeqNum() != CarsComingWest[0].GetSeqNum())
                                 {
                                     //set the exit time of the car
                                     CarsComingWest[0].SetExitTime((int)Math.Round(stopwatch_overall.Elapsed.TotalSeconds) + 1);
